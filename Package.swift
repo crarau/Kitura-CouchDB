@@ -18,16 +18,7 @@ import PackageDescription
 
 let package = Package(
     name: "Kitura-CouchDB",
-    targets: [
-        Target(
-            name: "CouchDB",
-            dependencies: []
-        ),
-        Target(
-            name: "CouchDBSample",
-            dependencies: [.Target(name: "CouchDB")]
-        ),
-    ],
+    targets: [],
     dependencies: [
         .Package(url: "https://github.com/IBM-Swift/HeliumLogger.git", majorVersion: 1, minor: 7),
         .Package(url: "https://github.com/IBM-Swift/Kitura-net.git", majorVersion: 1, minor: 7),
